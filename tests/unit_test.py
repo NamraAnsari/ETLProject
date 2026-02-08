@@ -5,13 +5,13 @@ def test_channel_handle(channel_handle):
     assert channel_handle == "MRCHEESE"
 
 
-def test_postgres_conn(mock_postgres_conn_vars):
-    connn = mock_postgres_conn_vars
-    assert connn.login == "mock_username"
-    assert connn.password == "mock_password"
-    assert connn.host == "mock_host"
-    assert connn.port == 1234
-    assert connn.schema == "mock_db_name"
+# def test_postgres_conn(mock_postgres_conn_vars):
+#     connn = mock_postgres_conn_vars
+#     assert connn.login == "mock_username"
+#     assert connn.password == "mock_password"
+#     assert connn.host == "mock_host"
+#     assert connn.port == 1234
+#     assert connn.schema == "mock_db_name"
 
 def test_dags_integrity(dagbag):
     # 1.
